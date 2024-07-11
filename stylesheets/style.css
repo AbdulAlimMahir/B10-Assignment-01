@@ -8,12 +8,15 @@
 }
 
 body {
-  background-color: #eff1f5;
+  color: #0D1321;
 }
-
+p{
+  color: #57575c;
+  font-size: 0.9rem;
+}
 /* Top Header - Navbar > Name & Resume */
 header {
-  background-color: #4c4f69;
+  /* background-color: #4c4f69; */
   width: 100%;
   height: 70px;
 }
@@ -21,7 +24,7 @@ header {
 .navDev {
   float: left;
   font-family: Roboto Mono;
-  color: #eff1f5;
+  color: #4c4f69;
   font-size: 24px;
   font-weight: 500;
   margin: 20px 5%;
@@ -36,17 +39,17 @@ header {
   float: right;
   margin: 15px 5%;
   padding: 10px 20px;
-  color: #eff1f5;
-  background-color: #4c4f69;
-  border: 1px solid #eff1f5;
+  color: #4c4f69;
+  background-color: transparent;
+  border: 1px solid #4c4f69;
   border-radius: 5px;
   transition: 0.1s;
 }
 
 .resume:hover {
   font-weight: bold;
-  border-left: 4px solid #eff1f5;
-  border-bottom: 4px solid #eff1f5;
+  border-left: 4px solid #4c4f69;
+  border-bottom: 4px solid #4c4f69;
 }
 
 /* Hero */
@@ -66,14 +69,14 @@ header {
   width: 200px;
   height: 200px;
   position: absolute;
-  margin: 25px;
+  margin: 50px 25px;
   left: 40%;
 }
 
 .hero>.content {
-  color: #4c4f69;
+  color: #0D1321;
   width: 100%;
-  margin-top: 280px;
+  margin-top: 320px;
   position: relative;
 }
 
@@ -95,13 +98,14 @@ header {
   width: 55%;
   display: block;
   text-align: center;
-  margin: 32px auto;
+  margin: 16px auto;
 }
 
 .content>.contact {
   font-family: Roboto Mono;
   position: absolute;
   left: 45%;
+  /* margin-top: 32px; */
   padding: 10px 20px;
   color: #eff1f5;
   background-color: #4c4f69;
@@ -115,4 +119,58 @@ header {
   color: #4c4f69;
   background-color: #eff1f5;
   border: 1px solid #4c4f69;
+}
+
+/* Why(?) Explaination */
+.why{
+  background-color: #f9f9ff;
+  /* border: 1px solid #4c4f69; */
+  margin: 64px 100px;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.why >.headline{
+  /* position: absolute; */
+  padding: 48px 120px;
+}
+.headline > h2, .headline>p{
+  margin: 12px auto;
+  text-align: center;
+}
+.why>.part{
+  background-color: #ffffff;
+  /* border: 1px solid #4c4f69; */
+  margin: 0 50px 50px;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+}
+/* .why>.part>.textbox{
+  width: 50%;
+} */
+.why>.part>.textbox>h2,
+.why>.part>.textbox>p{
+  margin-bottom: 15px;
+  width: 70%;
+}
+.why>.part>.textbox>.learn{
+  font-family: Roboto Mono;
+  margin: 15px 0;
+  padding: 10px 20px;
+  color: #4c4f69;
+  background-color: transparent;
+  border: 1px solid #4c4f69;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+.why>.part>.textbox>.learn:hover{
+  font-weight: bold;
+  border-left: 4px solid #4c4f69;
+  border-bottom: 4px solid #4c4f69;
+}
+.why>.part>.image{
+  width: auto;
+  height: auto;
+  display: inline;
+  margin: 0 32px;
 }
